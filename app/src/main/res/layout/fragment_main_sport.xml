@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/index_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin_sport_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/main_me_bg">
+
+        <include layout="@layout/tool_bar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/common_10"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/relative_out_door_sport"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/sport_out_door">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/common_18"
+                android:background="@mipmap/sport_out_door_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/common_14"
+                android:text="户外运动"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_12" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/color_white" />
+
+
+        <RelativeLayout
+            android:id="@+id/relative_iner_door_sport"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:background="@mipmap/sport_iner_door">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/common_18"
+                android:background="@mipmap/sport_iner_door_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/common_14"
+                android:text="室内运动"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_12" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lin_month"
+                android:layout_width="@dimen/common_22"
+                android:layout_height="@dimen/common_22"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/common_12"
+                android:layout_marginTop="@dimen/common_12"
+                android:background="@drawable/circle_choose_selector"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="月"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_12" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_week"
+                android:layout_width="@dimen/common_22"
+                android:layout_height="@dimen/common_22"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/common_12"
+                android:layout_marginLeft="@dimen/common_42"
+                android:layout_marginTop="@dimen/common_12"
+                android:background="@drawable/circle_choose_selector"
+                android:gravity="center"
+
+                >
+
+                <TextView
+                    android:id="@+id/text_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="周"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_12" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_year"
+                android:layout_width="@dimen/common_22"
+                android:layout_height="@dimen/common_22"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/common_12"
+                android:layout_marginRight="@dimen/common_42"
+                android:layout_marginTop="@dimen/common_12"
+                android:background="@drawable/circle_choose_selector"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="年"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_12" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/color_register_btn_start">-->
+        <!--&lt;!&ndash;charts&ndash;&gt;-->
+        <!--<lecho.lib.hellocharts.view.LineChartView-->
+        <!--android:id="@+id/line_chart_view_sport_fm"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_margin="@dimen/common_2" />-->
+        <!--</LinearLayout>-->
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_main_sport"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_register_btn_start"
+            android:visibility="gone">
+            <!--charts-->
+            <!--<lecho.lib.hellocharts.view.LineChartView-->
+            <!--android:id="@+id/line_chart_view_sport_fm"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_margin="@dimen/common_2" />-->
+        </android.support.v4.view.ViewPager>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/step_blue"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/common_10"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/common_16"
+                    android:text="总公里数"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_12" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/common_16"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="56.7"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/text_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_4"
+                        android:text="公里"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/text_12" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/color_black" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/common_16"
+                    android:text="总运动时长"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_12" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/common_16"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="13"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/text_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_4"
+                        android:text="小时"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_2"
+                        android:text="25"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/text_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_4"
+                        android:text="分"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/text_12" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/common_16"
+                    android:text="总消耗热量"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_12" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/common_16"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2320"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/text_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_4"
+                        android:text="千卡"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/text_12" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/color_black" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/common_16"
+                    android:text="平均心率"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_12" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/common_16"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="82"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/text_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_4"
+                        android:text="BPM"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/text_12" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

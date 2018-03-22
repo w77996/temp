@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/index_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/center_dot"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/center_dot"
+            android:background="@mipmap/main_me_bg"
+            android:orientation="vertical">
+
+            <include layout="@layout/tool_bar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/center_dot"
+            android:layout_marginBottom="@dimen/common_10"
+            android:background="@color/color_white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/common_44">
+
+                <LinearLayout
+                    android:id="@+id/me_lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/common_4"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3507"
+                            android:textColor="@color/step_blue"
+                            android:textSize="@dimen/text_16" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="日均步数"
+                            android:textColor="@color/color_me_text_black"
+                            android:textSize="@dimen/text_10" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="@dimen/common_34"
+
+                        android:background="@color/color_me_text_black" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="68"
+                            android:textColor="@color/step_blue"
+                            android:textSize="@dimen/text_16" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="总公里数"
+                            android:textColor="@color/color_me_text_black"
+                            android:textSize="@dimen/text_10" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="@dimen/common_34"
+
+                        android:background="@color/color_me_text_black" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5"
+                            android:textColor="@color/step_blue"
+                            android:textSize="@dimen/text_16" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="达标天数"
+                            android:textColor="@color/color_me_text_black"
+                            android:textSize="@dimen/text_10" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/me_lin"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WATER"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/text_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18888888888"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/text_10" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rela_user_info"
+            android:layout_width="@dimen/common_88"
+            android:layout_height="@dimen/common_88"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circle_white">
+
+            <com.wtwd.standard.widget.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/common_8"
+                android:src="@mipmap/main_me_photo"
+                app:border_color="@color/transparent" />
+
+            <ImageView
+                android:layout_width="@dimen/common_24"
+                android:layout_height="@dimen/common_24"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@mipmap/main_me_edit" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/common_negative_40"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_10"
+            android:background="@color/index_bg" />
+
+        <LinearLayout
+            android:id="@+id/lin_my_device"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_42"
+            android:layout_marginBottom="@dimen/common_10"
+            android:background="@drawable/linearlayout_click_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/common_24"
+                android:layout_height="@dimen/common_24"
+                android:layout_marginLeft="@dimen/common_12"
+                android:src="@mipmap/main_me_device" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_18"
+                android:layout_weight="1"
+                android:text="我的设备"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_12" />
+
+            <ImageView
+                android:layout_width="@dimen/common_8"
+                android:layout_height="@dimen/common_16"
+                android:layout_marginRight="@dimen/common_12"
+                android:src="@mipmap/arrow_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_msg_center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_42"
+            android:layout_marginBottom="@dimen/common_10"
+            android:background="@drawable/linearlayout_click_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/common_24"
+                android:layout_height="@dimen/common_24"
+                android:layout_marginLeft="@dimen/common_12"
+                android:src="@mipmap/main_me_messages" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_18"
+                android:layout_weight="1"
+                android:text="信息收纳"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_12" />
+
+            <ImageView
+                android:layout_width="@dimen/common_8"
+                android:layout_height="@dimen/common_16"
+                android:layout_marginRight="@dimen/common_12"
+                android:src="@mipmap/arrow_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_40"
+            android:background="@drawable/linearlayout_click_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/common_24"
+                android:layout_height="@dimen/common_24"
+                android:layout_marginLeft="@dimen/common_12"
+                android:src="@mipmap/main_me_common_problem" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_18"
+                android:layout_weight="1"
+                android:text="常见问题"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_12" />
+
+            <ImageView
+                android:layout_width="@dimen/common_8"
+                android:layout_height="@dimen/common_16"
+                android:layout_marginRight="@dimen/common_12"
+                android:src="@mipmap/arrow_right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/index_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_40"
+            android:background="@drawable/linearlayout_click_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/common_24"
+                android:layout_height="@dimen/common_24"
+                android:layout_marginLeft="@dimen/common_12"
+                android:src="@mipmap/main_me_about_us" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_18"
+                android:layout_weight="1"
+                android:text="关于我们"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_12" />
+
+            <ImageView
+                android:layout_width="@dimen/common_8"
+                android:layout_height="@dimen/common_16"
+                android:layout_marginRight="@dimen/common_12"
+                android:src="@mipmap/arrow_right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/index_bg" />
+
+        <LinearLayout
+            android:id="@+id/lin_feed_back"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_40"
+            android:background="@drawable/linearlayout_click_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/common_24"
+                android:layout_height="@dimen/common_24"
+                android:layout_marginLeft="@dimen/common_12"
+                android:src="@mipmap/main_me_feedback" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_18"
+                android:layout_weight="1"
+                android:text="意见反馈"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_12" />
+
+            <ImageView
+                android:layout_width="@dimen/common_8"
+                android:layout_height="@dimen/common_16"
+                android:layout_marginRight="@dimen/common_12"
+                android:src="@mipmap/arrow_right" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

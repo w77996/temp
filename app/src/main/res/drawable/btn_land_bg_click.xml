@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="999dp"/>
+    <gradient
+        android:endColor="@color/color_register_btn_end_6"
+        android:startColor="@color/color_register_btn_start_6"
+        android:angle="45"
+        />
+</shape>

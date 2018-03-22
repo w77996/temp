@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wtwd.standard.activity.MyDeviceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@mipmap/my_device_bg"
+        android:orientation="vertical">
+
+        <include layout="@layout/tool_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.wtwd.standard.widget.RingProgressView
+                android:id="@+id/ring_progress_battery"
+                android:layout_width="@dimen/common_100"
+                android:layout_height="@dimen/common_100"
+                app:bottom_unit_text="设备连接"
+                app:progress_color="@color/color_white"
+                app:ring_color="@color/color_white"
+                app:text_color="@color/color_white"
+                app:top_text="剩余电量" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_6"
+                android:text="@string/device_mac"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/common_10" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@color/index_bg">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lin_call_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_40"
+                    android:background="@drawable/linearlayout_click_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/common_24"
+                        android:layout_height="@dimen/common_24"
+                        android:layout_marginLeft="@dimen/common_12"
+                        android:src="@mipmap/my_device_call_phone" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_18"
+                        android:layout_weight="1"
+                        android:text="来电提醒"
+                        android:textColor="@color/color_item_text"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/common_10"
+                        android:text="已开启"
+                        android:textColor="@color/color_item_text"
+                        android:textSize="@dimen/text_12" />
+
+                    <ImageView
+                        android:layout_width="@dimen/common_8"
+                        android:layout_height="@dimen/common_16"
+                        android:layout_marginRight="@dimen/common_12"
+                        android:src="@mipmap/arrow_right" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_alarm_clock"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_40"
+                    android:layout_marginTop="1px"
+                    android:background="@drawable/linearlayout_click_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/common_24"
+                        android:layout_height="@dimen/common_24"
+                        android:layout_marginLeft="@dimen/common_12"
+                        android:src="@mipmap/my_device_alert" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_18"
+                        android:layout_weight="1"
+                        android:text="手环闹钟"
+                        android:textColor="@color/color_item_text"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/common_10"
+                        android:text="已开启"
+                        android:textColor="@color/color_item_text"
+                        android:textSize="@dimen/text_12" />
+
+                    <ImageView
+                        android:layout_width="@dimen/common_8"
+                        android:layout_height="@dimen/common_16"
+                        android:layout_marginRight="@dimen/common_12"
+                        android:src="@mipmap/arrow_right" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_wearing_method"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_40"
+                    android:layout_marginTop="1px"
+                    android:background="@drawable/linearlayout_click_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/common_24"
+                        android:layout_height="@dimen/common_24"
+                        android:layout_marginLeft="@dimen/common_12"
+                        android:src="@mipmap/my_device_wear" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_18"
+                        android:layout_weight="1"
+                        android:text="佩戴方式"
+                        android:textColor="@color/color_item_text"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:id="@+id/text_wearing_method"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/common_10"
+                        android:text="左手"
+                        android:textColor="@color/color_item_text"
+                        android:textSize="@dimen/text_12" />
+
+                    <ImageView
+                        android:layout_width="@dimen/common_8"
+                        android:layout_height="@dimen/common_16"
+                        android:layout_marginRight="@dimen/common_12"
+                        android:src="@mipmap/arrow_right" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_find_device"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_40"
+                    android:layout_marginTop="1px"
+                    android:background="@drawable/linearlayout_click_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/common_24"
+                        android:layout_height="@dimen/common_24"
+                        android:layout_marginLeft="@dimen/common_12"
+                        android:src="@mipmap/my_device_find" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_18"
+                        android:layout_weight="1"
+                        android:text="查找手环"
+                        android:textColor="@color/color_item_text"
+                        android:textSize="@dimen/text_12" />
+
+                    <ImageView
+                        android:layout_width="@dimen/common_8"
+                        android:layout_height="@dimen/common_16"
+                        android:layout_marginRight="@dimen/common_12"
+                        android:src="@mipmap/arrow_right" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_40"
+                    android:layout_marginTop="@dimen/common_10"
+                    android:background="@drawable/linearlayout_click_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_18"
+                        android:layout_weight="1"
+                        android:text="固件升级"
+                        android:textColor="@color/color_item_text"
+                        android:textSize="@dimen/text_12" />
+
+
+                    <ImageView
+                        android:layout_width="@dimen/common_8"
+                        android:layout_height="@dimen/common_16"
+                        android:layout_marginRight="@dimen/common_12"
+                        android:src="@mipmap/arrow_right" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_40"
+                    android:layout_marginTop="1px"
+                    android:background="@drawable/linearlayout_click_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_18"
+                        android:layout_weight="1"
+                        android:text="固件版本号"
+                        android:textColor="@color/color_item_text"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/common_12"
+                        android:text="V1.02"
+                        android:textColor="@color/color_item_text"
+                        android:textSize="@dimen/text_12" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_unbundled_device"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_40"
+                    android:layout_marginLeft="@dimen/common_40"
+                    android:layout_marginRight="@dimen/common_40"
+                    android:layout_marginTop="@dimen/common_10"
+                    android:background="@drawable/oval_button_click_animation"
+                    android:gravity="center"
+                    android:text="解除绑定"
+                    android:textColor="@color/color_device_unbundled"
+                    android:textSize="@dimen/text_12" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

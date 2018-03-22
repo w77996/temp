@@ -1,0 +1,70 @@
+<resources>
+    <string-array name="sport_item">
+        <item>户外</item>
+        <item>室内</item>
+    </string-array>
+    <string-array name="whole_point">
+        <item>00:00</item>
+        <item>01:00</item>
+        <item>02:00</item>
+        <item>03:00</item>
+        <item>04:00</item>
+        <item>05:00</item>
+        <item>06:00</item>
+        <item>07:00</item>
+        <item>08:00</item>
+        <item>09:00</item>
+        <item>10:00</item>
+        <item>11:00</item>
+        <item>12:00</item>
+        <item>13:00</item>
+        <item>14:00</item>
+        <item>15:00</item>
+        <item>16:00</item>
+        <item>17:00</item>
+        <item>18:00</item>
+        <item>19:00</item>
+        <item>20:00</item>
+        <item>21:00</item>
+        <item>22:00</item>
+        <item>23:00</item>
+    </string-array>
+
+    <string-array name="week_point">
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+        <item>周日</item>
+    </string-array>
+
+    <string-array name="month_point">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+    </string-array>
+
+    <string name="app_name">Standard</string>
+    <string name="main_fragment_heart_rate">心率\n跳数</string>
+    <string name="main_fragment_sport_time">运动\n时长</string>
+    <string name="main_fragment_battery">电池\n电量</string>
+    <string name="unbundled_description">说明:\n解除绑定后此设备可被其他账号绑定。\n可以再次绑定其他手环设备。\n手环数据将被清空。</string>
+    <string name="device_mac">00:00:00:00:00:00</string>
+
+    <!--登录注册-->
+    <string name="land_register">注册</string>
+    <string name="land_land">登录</string>
+    <string name="land_forget_password">忘记密码</string>
+    <string name="land_verifycode_land">验证码登录</string>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="navigationbarColor">#FF4081</color>
+
+    <color name="color_white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="index_bg">#f7f4f8</color>
+    <color name="color_black">#000000</color>
+    <color name="color_me_text_black">#484848</color>
+    <color name="color_grey">#565656</color>
+
+    <color name="step_blue">#2c8beb</color>
+    <color name="distance_green">#03b564</color>
+    <color name="calorie_orange">#ff452c</color>
+    <color name="sleep_purple">#695aca</color>
+    <color name="sleep_purple_2">#9187d4</color>
+
+    <color name="color_light_pur">#a89cf4</color>
+    <color name="color_light_pur_5">#7fa89cf4</color>
+    <color name="color_deep_pur">#695aca</color>
+    <color name="color_deep_pur_5">#7f695aca</color>
+
+    <color name="red_num">#ff452c</color>
+    <color name="red_delete">#e6604e</color>
+    <color name="black_edit">#eeeeee</color>
+
+    <color name="tab_line">#24e8f2</color>
+    <color name="tab_text">#c0c0c0</color>
+
+    <color name="color_device_unbundled">#ea6f1d</color>
+    <color name="color_stroke">#a9a9a9</color>
+    <color name="color_item_text">#010101</color>
+
+    <color name="alpha_white_9">#19ffffff</color>
+    <color name="alpha_white_8">#33ffffff</color>
+    <color name="alpha_white_6">#66ffffff</color>
+    <color name="alpha_white_5">#7fffffff</color>
+    <color name="alpha_white_1">#e1ffffff</color>
+
+    <color name="alpha_black_9">#19000000</color>
+    <color name="alpha_black_8">#33000000</color>
+    <color name="alpha_black_6">#66000000</color>
+    <color name="alpha_black_1">#e1000000</color>
+
+    <color name="color_register_btn">#2aa0ed</color>
+    <color name="color_register_btn_start">#2c8beb</color>
+    <color name="color_register_btn_end">#24e8f2</color>
+
+    <color name="color_register_btn_start_6">#662c8beb</color>
+    <color name="color_register_btn_end_6">#6624e8f2</color>
+
+
+    <color name="time_line">#bfbfbf</color>
+    <color name="read_msg">#25dcf1</color>
+
+    <color name="commit_dialog_ok">#007eff</color>
+    <color name="clock_small_text_color">#4d4d4d</color>
+
+</resources>

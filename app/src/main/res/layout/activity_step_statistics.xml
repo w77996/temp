@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wtwd.standard.activity.StepStatisticsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="13"
+        android:background="@mipmap/main_page_bg"
+        android:orientation="vertical">
+
+        <include layout="@layout/tool_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.wtwd.standard.widget.RingProgressView
+                android:id="@+id/ring_progress_step"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:bottom_unit_text="步"
+                app:progress_color="@color/color_white"
+                app:ring_color="@color/color_white"
+                app:text_color="@color/color_white"
+                app:top_text="今日步数" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当月未达标"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_2"
+                    android:text="8"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_20" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/common_2"
+                android:layout_marginTop="@dimen/common_2"
+                android:background="@color/color_white" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当月达标"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_2"
+                    android:text="12"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_20" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/common_2"
+                android:layout_marginTop="@dimen/common_2"
+                android:background="@color/color_white" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="累计达标"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_2"
+                    android:text="134"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_20" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20">
+
+        <LinearLayout
+            android:id="@+id/lin_step_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/linearlayout_click_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_4"
+                android:background="@mipmap/step_statistics_set" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/common_4"
+                android:layout_marginTop="@dimen/common_2"
+                android:text="步数设置"
+                android:textColor="@color/color_item_text"
+                android:textSize="@dimen/text_8"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/lin_step_set"
+            android:background="@color/index_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_26">
+
+                <com.wtwd.standard.widget.hscorll.StringScrollPicker
+                    android:id="@+id/scroll_picker_choose"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:spv_alignment="center"
+                    app:spv_disallow_intercept_touch="true"
+                    app:spv_end_color="@color/color_black"
+                    app:spv_is_circulation="false"
+                    app:spv_max_text_size="@dimen/text_12"
+                    app:spv_min_text_size="@dimen/text_12"
+                    app:spv_start_color="@color/step_blue"
+                />
+                <!--app:spv_orientation="horizontal"-->
+                <!--app:spv_visible_item_count="1"-->
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_54"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/text_current_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/alpha_black_8"
+                        android:textSize="@dimen/text_8" />
+
+                    <LinearLayout
+                        android:id="@+id/lin_step_day"
+                        android:layout_width="@dimen/common_22"
+                        android:layout_height="@dimen/common_22"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/circle_choose_selector"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/text_step_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="日"
+                            android:textColor="@color/alpha_black_6"
+                            android:textSize="@dimen/text_12" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_step_week"
+                        android:layout_width="@dimen/common_22"
+                        android:layout_height="@dimen/common_22"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/circle_choose_selector"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/text_step_week"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="周"
+                            android:textColor="@color/alpha_black_6"
+                            android:textSize="@dimen/text_12" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_step_month"
+                        android:layout_width="@dimen/common_22"
+                        android:layout_height="@dimen/common_22"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/circle_choose_selector"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/text_step_month"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="月"
+                            android:textColor="@color/alpha_black_6"
+                            android:textSize="@dimen/text_12" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--柱状图-->
+
+                <lecho.lib.hellocharts.view.ColumnChartView
+                    android:id="@+id/column_chart_step_statistic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/common_6" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

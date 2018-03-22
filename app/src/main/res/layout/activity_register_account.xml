@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/index_bg"
+    tools:context="com.wtwd.standard.activity.RegisterAccountActivity">
+
+    <include
+        layout="@layout/tool_bar"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_54"
+            android:background="@mipmap/logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:id="@+id/img_land_country_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_34"
+                    android:background="@mipmap/land_country_bg" />
+
+                <TextView
+                    android:id="@+id/land_country_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/common_34"
+                    android:text="中国 +86"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_14" />
+
+                <EditText
+                    android:id="@+id/edit_register_country_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_36"
+                    android:layout_marginLeft="@dimen/common_8"
+                    android:layout_toLeftOf="@id/land_country_name"
+                    android:layout_toRightOf="@id/img_land_country_bg"
+                    android:background="@null"
+                    android:hint="国家/地区"
+                    android:maxLines="1"
+                    android:textColorHint="@color/alpha_black_8"
+                    android:textSize="@dimen/text_14" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignLeft="@id/edit_register_country_edit"
+                    android:layout_below="@id/edit_register_country_edit"
+                    android:layout_marginRight="@dimen/common_34"
+                    android:background="@color/alpha_black_8" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_8">
+
+                <ImageView
+                    android:id="@+id/img_land_account_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_34"
+                    android:background="@mipmap/land_account_bg" />
+
+
+                <LinearLayout
+                    android:id="@+id/lin_clear_account"
+                    android:layout_width="@dimen/common_24"
+                    android:layout_height="@dimen/common_24"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/common_34"
+                    android:gravity="center_vertical|right">
+
+                    <ImageView
+                        android:id="@+id/img_land_clear_bg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/land_clear_bg" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edit_register_account_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_36"
+                    android:layout_marginLeft="@dimen/common_8"
+                    android:layout_toLeftOf="@+id/lin_clear_account"
+                    android:layout_toRightOf="@+id/img_land_account_bg"
+                    android:background="@null"
+                    android:hint="邮箱或手机号"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColorHint="@color/alpha_black_8"
+                    android:textSize="@dimen/text_14" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignLeft="@id/edit_register_account_edit"
+                    android:layout_below="@id/edit_register_account_edit"
+                    android:layout_marginRight="@dimen/common_34"
+                    android:background="@color/alpha_black_8" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_36"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_register_next_step"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40"
+                android:layout_marginLeft="@dimen/common_42"
+                android:layout_marginRight="@dimen/common_42"
+                android:background="@mipmap/land_btn_bg"
+                android:text="下一步"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_16"
+                android:gravity="center">
+                <LinearLayout
+                    android:id="@+id/lin_check_protocol"
+                    android:layout_width="@dimen/common_18"
+                    android:layout_height="@dimen/common_18"
+                    android:gravity="center"
+                    >
+                <CheckBox
+                    android:id="@+id/cb_register_protocol"
+                    android:layout_width="@dimen/common_12"
+                    android:layout_height="@dimen/common_12"
+                    android:background="@drawable/register_check_box"
+                    android:button="@null"
+                    android:checked="false" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_4"
+                    android:text="同意用户协议与隐私条款"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_12" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

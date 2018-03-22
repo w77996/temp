@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.wtwd.standard.activity.SportOutDoorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/main_sport_bg"
+        android:orientation="vertical"
+
+        >
+
+        <include layout="@layout/tool_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_40"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/out_door_timing" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_14"
+                android:text="00:00:00"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_42"
+                android:visibility="gone" />
+
+            <Chronometer
+                android:id="@+id/chron_count_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_14"
+                android:format="%s"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_42"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_14"
+                android:text="时间"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_50"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/out_door_km" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_8"
+                    android:text="34.2"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_22" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_8"
+                    android:text="公里"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/out_door_step" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_8"
+                    android:text="6000"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_22" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_8"
+                    android:text="步数"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_12" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/out_door_heart" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_8"
+                    android:text="75"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_22" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_8"
+                    android:text="心率"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_12" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/lin_close"
+                android:layout_width="@dimen/common_70"
+                android:layout_height="@dimen/common_70"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circle_red"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="结束"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_go_on"
+                android:layout_width="@dimen/common_70"
+                android:layout_height="@dimen/common_70"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circle_green"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="继续"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_12" />
+            </LinearLayout>
+
+
+            <com.wtwd.standard.widget.circleProgress.CirclePressProgress
+                android:id="@+id/circle_press_progress"
+                android:layout_width="@dimen/common_100"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                app:press_out_circle_bg_color="@color/alpha_black_9"
+                app:press_out_circle_up_color="@color/color_white"
+                app:press_text_color="@color/color_white"
+                app:press_text_string="GO"
+
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/lin_go"
+                android:layout_width="@dimen/common_88"
+                android:layout_height="@dimen/common_88"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_circle_sport"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/text_go"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="GO"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_20" />
+
+                <ProgressBar
+                    android:id="@+id/progress_sport"
+                    style="@style/sport_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:max="100" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_26">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/common_12"
+                android:background="@mipmap/out_door_map" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_12"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GPS"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_12" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_count_down_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_20" />
+
+</RelativeLayout>

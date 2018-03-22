@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_64"
+    android:orientation="vertical">
+
+    <com.wtwd.standard.widget.swipelayout.SwipeMenuLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:contentView="@+id/content"
+        app:rightMenuView="@+id/right">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/common_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/common_12"
+                    android:text="07:00"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/common_16"
+                    android:text="叫醒闹钟"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_12" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/common_12"
+                android:layout_marginLeft="@dimen/common_12"
+                android:layout_marginTop="@dimen/common_12"
+                android:background="@color/color_black" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/common_12"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/common_12"
+                    android:text="每周一至周五"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/common_16"
+                    android:text="开启"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_12" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ToggleButton
+                    android:layout_width="@dimen/common_48"
+                    android:layout_height="@dimen/common_24"
+                    android:layout_marginRight="@dimen/common_12"
+                    android:background="@drawable/toggle_selector"
+                    android:textOff="@null"
+                    android:textOn="@null" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lin_delete_clock"
+                android:layout_width="@dimen/common_52"
+                android:layout_height="match_parent"
+                android:background="@color/red_delete"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="删除"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_edit_clock"
+                android:layout_width="@dimen/common_52"
+                android:layout_height="match_parent"
+                android:background="@color/black_edit"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="编辑"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_12" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.wtwd.standard.widget.swipelayout.SwipeMenuLayout>
+
+</LinearLayout>

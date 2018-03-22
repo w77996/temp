@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.wtwd.standard.activity.DeviceUnbundledActivity">
+
+    <include layout="@layout/tool_bar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_62"
+        android:text="是否确定解除绑定设备"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/text_14" />
+
+    <ImageView
+        android:layout_width="@dimen/common_88"
+        android:layout_height="@dimen/common_88"
+        android:layout_marginTop="@dimen/common_42"
+        android:background="@mipmap/device_unbind_icon"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_34"
+        android:gravity="center_horizontal"
+        android:text="@string/unbundled_description"
+        android:textColor="@color/alpha_black_1"
+        android:textSize="@dimen/text_12" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_40"
+        android:layout_marginLeft="@dimen/common_40"
+        android:layout_marginRight="@dimen/common_40"
+        android:background="@drawable/oval_button_click_animation"
+        android:gravity="center"
+        android:text="确定解绑"
+        android:textColor="@color/color_device_unbundled"
+        android:textSize="@dimen/text_12"
+        android:layout_marginTop="@dimen/common_68"
+        />
+
+</LinearLayout>

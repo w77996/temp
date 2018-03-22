@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <shape>
+            <corners android:radius="999dp" />
+            <stroke android:width="2px" android:color="@color/color_black" />
+            <solid android:color="@color/color_register_btn" />
+            <!--<size android:width="@dimen/common_6" android:height="@dimen/common_6" />-->
+            <padding android:bottom="@dimen/common_4" android:left="@dimen/common_4" android:right="@dimen/common_4" android:top="@dimen/common_4"/>
+
+            <!--<padding-->
+            <!--android:bottom="14dp"-->
+            <!--android:left="14dp"-->
+            <!--android:right="14dp"-->
+            <!--android:top="14dp" >-->
+            <!--</padding>-->
+        </shape>
+    </item>
+
+    <item android:state_checked="false">
+        <shape>
+            <corners android:radius="999dp" />
+            <stroke android:width="2px" android:color="@color/color_black" />
+            <solid android:color="@color/transparent" />
+            <!--<size android:width="@dimen/common_6" android:height="@dimen/common_6" />-->
+            <padding android:bottom="@dimen/common_4" android:left="@dimen/common_4" android:right="@dimen/common_4" android:top="@dimen/common_4" />
+            <!--&lt;!&ndash;<padding&ndash;&gt;-->
+            <!--&lt;!&ndash;android:bottom="4dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:left="4dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:right="4dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:top="4dp" >&ndash;&gt;-->
+            <!--</padding>-->
+        </shape>
+    </item>
+</selector>

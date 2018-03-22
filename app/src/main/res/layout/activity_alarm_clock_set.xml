@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/index_bg"
+    android:orientation="vertical"
+    tools:context="com.wtwd.standard.activity.AlarmClockSetActivity">
+
+    <include layout="@layout/tool_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_58"
+        android:background="@drawable/linearlayout_click_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/common_20"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重复"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="只响一次"
+                android:textColor="@color/clock_small_text_color"
+                android:textSize="@dimen/text_10" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_12"
+            android:background="@mipmap/arrow_right" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/common_20"
+        android:background="@color/alpha_black_8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_58"
+        android:background="@drawable/linearlayout_click_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/common_20"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="震动"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="连续"
+                android:textColor="@color/clock_small_text_color"
+                android:textSize="@dimen/text_10" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_12"
+            android:background="@mipmap/arrow_right" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_48"
+        android:layout_marginTop="@dimen/common_12"
+        android:background="@drawable/linearlayout_click_bg"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_18"
+            android:text="闹钟备注"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_14"
+
+            />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/common_10"
+            android:layout_marginLeft="@dimen/common_18"
+            android:layout_marginTop="@dimen/common_10"
+            android:background="@color/alpha_black_9"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/common_18"
+            android:background="@null"
+            android:hint="输入备注"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColorHint="#757575"
+            android:textSize="@dimen/text_14"
+
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text_clock_set_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/linearlayout_click_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/common_18"
+            android:paddingTop="@dimen/common_18"
+            android:text="确定"
+            android:textColor="@color/step_blue"
+            android:textSize="@dimen/text_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/text_clock_set_ok"
+            android:layout_marginTop="@dimen/common_80"
+            android:orientation="vertical"
+
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/alpha_black_8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:elevation="@dimen/common_2">
+
+                    <com.wtwd.standard.widget.hscorll.StringScrollPicker
+                        android:id="@+id/string_scroll_hour"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:spv_center_item_background="@color/color_white"
+                        app:spv_is_circulation="true"
+                        app:spv_max_text_size="@dimen/text_16"
+                        app:spv_min_text_size="@dimen/text_12"
+                        app:spv_orientation="vertical"
+                        app:spv_visible_item_count="5" />
+
+                    <View
+                        android:id="@+id/hour_center"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerInParent="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/common_14"
+                        android:layout_toRightOf="@id/hour_center"
+                        android:text="时"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/text_10" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/alpha_black_8" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:elevation="@dimen/common_2">
+
+                    <com.wtwd.standard.widget.hscorll.StringScrollPicker
+                        android:id="@+id/string_scroll_minute"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:spv_center_item_background="@color/color_white"
+                        app:spv_is_circulation="true"
+                        app:spv_max_text_size="@dimen/text_16"
+                        app:spv_min_text_size="@dimen/text_12"
+                        app:spv_orientation="vertical"
+                        app:spv_visible_item_count="5" />
+
+                    <View
+                        android:id="@+id/minute_center"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerInParent="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/common_14"
+                        android:layout_toRightOf="@id/minute_center"
+                        android:text="分"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/text_10" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/alpha_black_8" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

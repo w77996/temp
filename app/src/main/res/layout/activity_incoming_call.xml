@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wtwd.standard.activity.IncomingCallActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/incoming_call_bg"
+        android:orientation="vertical">
+
+        <include layout="@layout/tool_bar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/index_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_40"
+            android:background="@drawable/linearlayout_click_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/common_12"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开启来电提醒"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机来电时,手环会震动提醒"
+                    android:textColor="@color/alpha_white_8"
+                    android:textSize="@dimen/text_10" />
+            </LinearLayout>
+
+            <ToggleButton
+                android:layout_width="@dimen/common_48"
+                android:layout_height="@dimen/common_24"
+                android:layout_marginRight="@dimen/common_12"
+                android:background="@drawable/toggle_selector"
+                android:textOff="@null"
+                android:textOn="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_40"
+            android:layout_marginTop="1px"
+            android:background="@drawable/linearlayout_click_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/common_12"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开启短信提醒"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机收到短信时,手环会震动提醒"
+                    android:textColor="@color/alpha_white_8"
+                    android:textSize="@dimen/text_10" />
+            </LinearLayout>
+
+            <ToggleButton
+                android:layout_width="@dimen/common_48"
+                android:layout_height="@dimen/common_24"
+                android:layout_marginRight="@dimen/common_12"
+                android:background="@drawable/toggle_selector"
+                android:textOff="@null"
+                android:textOn="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_40"
+            android:layout_marginTop="1px"
+            android:background="@drawable/linearlayout_click_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/common_12"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="来电延迟提醒"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机接收到的来电与短信,手环将延时震动提醒"
+                    android:textColor="@color/alpha_white_8"
+                    android:textSize="@dimen/text_10" />
+            </LinearLayout>
+
+            <ToggleButton
+                android:layout_width="@dimen/common_48"
+                android:layout_height="@dimen/common_24"
+                android:layout_marginRight="@dimen/common_12"
+                android:background="@drawable/toggle_selector"
+                android:textOff="@null"
+                android:textOn="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_40"
+            android:layout_marginTop="1px"
+            android:background="@drawable/linearlayout_click_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/common_12"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="延迟时长"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_12" />
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="手机收到短信时,手环会震动提醒"-->
+                <!--android:textColor="@color/alpha_white_8"-->
+                <!--android:textSize="@dimen/text_10" />-->
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/common_10"
+                android:text="来电4秒后提醒"
+                android:textColor="@color/alpha_black_8"
+                android:textSize="@dimen/text_10"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/common_8"
+                android:layout_height="@dimen/common_16"
+                android:layout_marginRight="@dimen/common_12"
+                android:background="@mipmap/arrow_right" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
